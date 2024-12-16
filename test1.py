@@ -1,4 +1,23 @@
-from trafficSimulator import *
+
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from core.geometry.segment import Segment
+from trafficSimulator.core.geometry.segment import Segment
+from trafficSimulator.core.geometry.quadratic_curve import QuadraticCurve
+from trafficSimulator.core.geometry.cubic_curve import CubicCurve
+
+from trafficSimulator.core.vehicle import Vehicle
+from trafficSimulator.core.vehicle_generator import VehicleGenerator
+
+from trafficSimulator.core.simulation import Simulation
+from trafficSimulator.visualizer.window import Window
+
+from trafficSimulator.core.traffic_light import TrafficLight
+from trafficSimulator.qlearning.q_agent import QLearningAgent
+
 
 sim = Simulation()
 
