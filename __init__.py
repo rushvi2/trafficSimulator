@@ -9,4 +9,5 @@ from .core.simulation import Simulation
 from .visualizer.window import Window
 
 from .core.traffic_light import TrafficLight
+
 from trafficSimulator.qlearning.q_agent import QLearningAgent

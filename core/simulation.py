@@ -3,7 +3,8 @@ from .geometry.quadratic_curve import QuadraticCurve
 from .geometry.cubic_curve import CubicCurve
 from .geometry.segment import Segment
 from .vehicle import Vehicle
-from trafficSimulator.qlearning.q_agent import QLearningAgent
+# from FinalProject.qlearning.q_agent import QLearningAgent
+from qlearning.q_agent import QLearningAgent
 
 class Simulation:
     def __init__(self, max_duration=200, use_q_learning=False, state_size=4, action_size=2):

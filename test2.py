@@ -4,19 +4,33 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# from core.geometry.segment import Segment
+# from trafficSimulator.core.geometry.segment import Segment
+# from trafficSimulator.core.geometry.quadratic_curve import QuadraticCurve
+# from trafficSimulator.core.geometry.cubic_curve import CubicCurve
+#
+# from trafficSimulator.core.vehicle import Vehicle
+# from trafficSimulator.core.vehicle_generator import VehicleGenerator
+#
+# from trafficSimulator.core.simulation import Simulation
+# from trafficSimulator.visualizer.window import Window
+#
+# from trafficSimulator.core.traffic_light import TrafficLight
+# from trafficSimulator.qlearning.q_agent import QLearningAgent
+
 from core.geometry.segment import Segment
-from trafficSimulator.core.geometry.segment import Segment
-from trafficSimulator.core.geometry.quadratic_curve import QuadraticCurve
-from trafficSimulator.core.geometry.cubic_curve import CubicCurve
+from core.geometry.quadratic_curve import QuadraticCurve
+from core.geometry.cubic_curve import CubicCurve
 
-from trafficSimulator.core.vehicle import Vehicle
-from trafficSimulator.core.vehicle_generator import VehicleGenerator
+from core.vehicle import Vehicle
+from core.vehicle_generator import VehicleGenerator
 
-from trafficSimulator.core.simulation import Simulation
-from trafficSimulator.visualizer.window import Window
+from core.simulation import Simulation
+from visualizer.window import Window
 
-from trafficSimulator.core.traffic_light import TrafficLight
-from trafficSimulator.qlearning.q_agent import QLearningAgent
+from core.traffic_light import TrafficLight
+from qlearning.q_agent import QLearningAgent
+
 
 sim = Simulation(max_duration=200, use_q_learning=True)
 
